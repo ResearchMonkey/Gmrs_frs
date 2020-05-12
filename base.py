@@ -152,9 +152,8 @@ gmrs_frs_pw_0_5 = (
     '467.6875',
     '467.7125')
 
-
 # https://chirp.danplanet.com/projects/chirp/wiki/MemoryEditorColumns
-Loc = 164
+Loc = 0
 Frequency = ''
 Tone_Mode = ''
 Tone = ''
@@ -173,13 +172,13 @@ freq_channel_number = ''
 freq_sub_channel = ''
 watts = ''
 
-try:
-    f = open("chirp_GMRS_FRS.csv", "x")
-except:
-    FileExistsError
-    print("File already existed")
+# try:
+#     f = open("chirp_GMRS_FRS.csv", "x")
+# except FileExistsError:
+#     print("File already existed")
 
-print("Loc, freq, Tone_Mode, Tone, ToneSql, DTCS_Code, DTCS_Rx_Code, DTCS_Pol, Duplex, Offset, Mode, Tune_Step, Skip, Cross_Mode, channel_name, watts")
+print(
+    "Loc, freq, Tone_Mode, Tone, ToneSql, DTCS_Code, DTCS_Rx_Code, DTCS_Pol, Duplex, Offset, Mode, Tune_Step, Skip, Cross_Mode, channel_name, watts")
 
 for freq in gmrs_frs_list:
     for tone_ctcss in ctcss_list:
@@ -194,8 +193,22 @@ for freq in gmrs_frs_list:
             watts = "2"
         else:
             watts = '0.5'
-        print(f"{Loc}, {freq}, {Tone_Mode}, {tone_ctcss}, {ToneSql}, {DTCS_Code}, {DTCS_Rx_Code}, {DTCS_Pol}, {Duplex}, {Offset}, {Mode}, {Tune_Step}, {Skip}, {Cross_Mode}, {channel_name}, {watts}")
         Loc += 1
+
+        # FIle for CHIRP
         f = open("chirp_GMRS_FRS.csv", "a")
-        f.write(f"{Loc}, {freq}, {Tone_Mode}, {tone_ctcss}, {ToneSql}, {DTCS_Code}, {DTCS_Rx_Code}, {DTCS_Pol}, {Duplex}, {Offset}, {Mode}, {Tune_Step}, {Skip}, {Cross_Mode}, {channel_name}, {watts}\n")
+        file_file_chirp = f"{Loc}, {freq}, {Tone_Mode}, {tone_ctcss}, {ToneSql}, {DTCS_Code}, {DTCS_Rx_Code}, {DTCS_Pol}, {Duplex}, {Offset}, {Mode}, {Tune_Step}, {Skip}, {Cross_Mode}, {channel_name}, {watts}\n"
+        # print(file_file)
+        f.write(file_file_chirp)
+        f.close()
+
+        # File for KG-UV9D(Plus)
+        if watts == "2":
+            watts = 'High'
+        else:
+            watts = "Low"
+        f = open("wouxun_GMRS_FRS.csv", "a")
+        file_file_wou = f"{Loc}, {freq}, {channel_name}, {Tone_Mode}, {tone_ctcss}, {ToneSql}, {DTCS_Code}, {DTCS_Rx_Code}, {DTCS_Pol}, {Duplex}, {Offset}, {Mode}, {Tune_Step}, {Skip}, {Cross_Mode}, {watts}\n"
+        # print(file_file)
+        f.write(file_file_wou)
         f.close()
