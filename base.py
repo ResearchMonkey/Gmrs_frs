@@ -184,16 +184,16 @@ gmrs_mode_NFM = (
     '467.712500')
 
 # https://chirp.danplanet.com/projects/chirp/wiki/MemoryEditorColumns
-Location = 0
+Location = 40
 Frequency = ''
 Name = ''
 Tone_Mode = ''
-Tone = ''
+Tone = 'TSQL'
 ToneSql = ''
 DTCS_Code = ''
 DTCS_Pol = ''
 Duplex = ''
-Offset = '5'
+Offset = '0.000000'
 Mode = ''
 Tune_Step = ''
 Skip = ''
@@ -206,12 +206,12 @@ Cross_Mode = ''
 channel_name = ''
 freq_channel_number = ''
 freq_sub_channel = ''
-watts = ''
+Power = ''
 rToneFreq = ''
 cToneFreq = ''
 DtcsCode = '023'
 DtcsPolarity = 'NN'
-TStep = '12.5'
+TStep = '5.00'
 DVCODE = ''
 
 # try:
@@ -234,15 +234,17 @@ for freq in gmrs_frs_list:
         # sets the sub channel
         if tone_ctcss in ctcss:
             freq_sub_channel = ctcss[tone_ctcss]
+            rToneFreq = tone_ctcss
+            cToneFreq = tone_ctcss
         channel_name = f"CH_{freq_channel_number}_{freq_sub_channel}"
         if freq in gmrs_mode_NFM:
             Mode = 'NFM'
         else:
             Mode = 'FM'
         if freq in gmrs_frs_pw_2:
-            watts = "2"
+            Power = "L"
         else:
-            watts = '0.5'
+            Power = 'L'
         Location += 1
 
         # FIle for CHIRP
