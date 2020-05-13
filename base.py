@@ -79,109 +79,155 @@ ctcss_list = (
     '250.3')
 
 gmrs_frs = {
-    '462.5625': '1',
-    '462.5875': '2',
-    '462.6125': '3',
-    '462.6375': '4',
-    '462.6625': '5',
-    '462.6875': '6',
-    '462.7125': '7',
-    '467.5625': '8',
-    '467.5875': '9',
-    '467.6125': '10',
-    '467.6375': '11',
-    '467.6625': '12',
-    '467.6875': '13',
-    '467.7125': '14',
-    '462.5500': '15',
-    '462.5750': '16',
-    '462.6000': '17',
-    '462.6250': '18',
-    '462.6500': '19',
-    '462.6750': '20',
-    '462.7000': '21',
-    '462.7250': '22'}
+    '462.562500': '1',
+    '462.587500': '2',
+    '462.612500': '3',
+    '462.637500': '4',
+    '462.662500': '5',
+    '462.687500': '6',
+    '462.712500': '7',
+    '467.562500': '8',
+    '467.587500': '9',
+    '467.612500': '10',
+    '467.637500': '11',
+    '467.662500': '12',
+    '467.687500': '13',
+    '467.712500': '14',
+    '462.550000': '15',
+    '462.575000': '16',
+    '462.600000': '17',
+    '462.625000': '18',
+    '462.650000': '19',
+    '462.675000': '20',
+    '462.700000': '21',
+    '462.725000': '22'}
 
 gmrs_frs_list = (
-    '462.5625',
-    '462.5875',
-    '462.6125',
-    '462.6375',
-    '462.6625',
-    '462.6875',
-    '462.7125',
-    '467.5625',
-    '467.5875',
-    '467.6125',
-    '467.6375',
-    '467.6625',
-    '467.6875',
-    '467.7125',
-    '462.5500',
-    '462.5750',
-    '462.6000',
-    '462.6250',
-    '462.6500',
-    '462.6750',
-    '462.7000',
-    '462.7250')
+    '462.562500',
+    '462.587500',
+    '462.612500',
+    '462.637500',
+    '462.662500',
+    '462.687500',
+    '462.712500',
+    '467.562500',
+    '467.587500',
+    '467.612500',
+    '467.637500',
+    '467.662500',
+    '467.687500',
+    '467.712500',
+    '462.550000',
+    '462.575000',
+    '462.600000',
+    '462.625000',
+    '462.650000',
+    '462.675000',
+    '462.700000',
+    '462.725000')
 
 gmrs_frs_pw_2 = (
-    '462.5625',
-    '462.5875',
-    '462.6125',
-    '462.6375',
-    '462.6625',
-    '462.6875',
-    '462.7125',
-    '462.5500',
-    '462.5750',
-    '462.6000',
-    '462.6250',
-    '462.6500',
-    '462.6750',
-    '462.7000',
-    '462.7250')
+    '462.562500',
+    '462.587500',
+    '462.612500',
+    '462.637500',
+    '462.662500',
+    '462.687500',
+    '462.712500',
+    '462.550000',
+    '462.575000',
+    '462.600000',
+    '462.625000',
+    '462.650000',
+    '462.675000',
+    '462.700000',
+    '462.725000')
 
 gmrs_frs_pw_0_5 = (
-    '467.5625',
-    '467.5875',
-    '467.6125',
-    '467.6375',
-    '467.6625',
-    '467.6875',
-    '467.7125')
+    '467.562500',
+    '467.587500',
+    '467.612500',
+    '467.637500',
+    '467.662500',
+    '467.687500',
+    '467.712500')
+
+gmrs_mode_NFM = (
+    '462.562500',
+    '462.587500',
+    '462.612500',
+    '462.637500',
+    '462.662500',
+    '462.687500',
+    '462.712500',
+    '467.562500',
+    '467.587500',
+    '467.612500',
+    '467.637500',
+    '467.662500',
+    '467.687500',
+    '467.712500',
+    '462.550000',
+    '462.575000',
+    '462.600000',
+    '462.625000',
+    '462.650000',
+    '462.675000',
+    '462.700000',
+    '462.725000',
+    '467.562500',
+    '467.587500',
+    '467.612500',
+    '467.637500',
+    '467.662500',
+    '467.687500',
+    '467.712500')
 
 # https://chirp.danplanet.com/projects/chirp/wiki/MemoryEditorColumns
-Loc = 0
+Location = 0
 Frequency = ''
+Name = ''
 Tone_Mode = ''
 Tone = ''
 ToneSql = ''
 DTCS_Code = ''
-DTCS_Rx_Code = ''
 DTCS_Pol = ''
 Duplex = ''
-Offset = ''
+Offset = '5'
 Mode = ''
 Tune_Step = ''
 Skip = ''
+Comment = ''
+URCALL = ''
+RPT1CALL = ''
+RPT2CALL = ''
+DTCS_Rx_Code = ''
 Cross_Mode = ''
 channel_name = ''
 freq_channel_number = ''
 freq_sub_channel = ''
 watts = ''
+rToneFreq = ''
+cToneFreq = ''
+DtcsCode = '023'
+DtcsPolarity = 'NN'
+TStep = '12.5'
+DVCODE = ''
 
 # try:
 #     f = open("chirp_GMRS_FRS.csv", "x")
 # except FileExistsError:
 #     print("File already existed")
 
-print(
-    "Loc, freq, Tone_Mode, Tone, ToneSql, DTCS_Code, DTCS_Rx_Code, DTCS_Pol, Duplex, Offset, Mode, Tune_Step, Skip, Cross_Mode, channel_name, watts")
+print('Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE')
+f = open("chirp_GMRS_FRS.csv", "w")
+f.write(f'Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE\n')
+f.close()
 
 for freq in gmrs_frs_list:
     for tone_ctcss in ctcss_list:
+        rToneFreq = tone_ctcss
+        cToneFreq = tone_ctcss
         # Sets the channel
         if freq in gmrs_frs:
             freq_channel_number = gmrs_frs[freq]
@@ -189,26 +235,20 @@ for freq in gmrs_frs_list:
         if tone_ctcss in ctcss:
             freq_sub_channel = ctcss[tone_ctcss]
         channel_name = f"CH_{freq_channel_number}_{freq_sub_channel}"
+        if freq in gmrs_mode_NFM:
+            Mode = 'NFM'
+        else:
+            Mode = 'FM'
         if freq in gmrs_frs_pw_2:
             watts = "2"
         else:
             watts = '0.5'
-        Loc += 1
+        Location += 1
 
         # FIle for CHIRP
         f = open("chirp_GMRS_FRS.csv", "a")
-        file_file_chirp = f"{Loc}, {freq}, {Tone_Mode}, {tone_ctcss}, {ToneSql}, {DTCS_Code}, {DTCS_Rx_Code}, {DTCS_Pol}, {Duplex}, {Offset}, {Mode}, {Tune_Step}, {Skip}, {Cross_Mode}, {channel_name}, {watts}\n"
+        file_file_chirp = f"{Location},{channel_name},{freq},{Duplex},{Offset},{Tone},{rToneFreq},{cToneFreq},{DtcsCode},{DtcsPolarity},{Mode},{TStep},{Skip},{Comment},{URCALL},{RPT1CALL},{RPT2CALL},{DVCODE}\n"
         # print(file_file)
         f.write(file_file_chirp)
         f.close()
 
-        # File for KG-UV9D(Plus)
-        if watts == "2":
-            watts = 'High'
-        else:
-            watts = "Low"
-        f = open("wouxun_GMRS_FRS.csv", "a")
-        file_file_wou = f"{Loc}, {freq}, {channel_name}, {Tone_Mode}, {tone_ctcss}, {ToneSql}, {DTCS_Code}, {DTCS_Rx_Code}, {DTCS_Pol}, {Duplex}, {Offset}, {Mode}, {Tune_Step}, {Skip}, {Cross_Mode}, {watts}\n"
-        # print(file_file)
-        f.write(file_file_wou)
-        f.close()
