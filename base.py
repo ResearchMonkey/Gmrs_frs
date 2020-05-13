@@ -1,13 +1,13 @@
 ctcss = {
-    '67.0': '1 ',
-    '71.9': '2 ',
-    '74.4': '3 ',
-    '77.0': '4 ',
-    '79.7': '5 ',
-    '82.5': '6 ',
-    '85.4': '7 ',
-    '88.5': '8 ',
-    '91.5': '9 ',
+    '67.0': '1',
+    '71.9': '2',
+    '74.4': '3',
+    '77.0': '4',
+    '79.7': '5',
+    '82.5': '6',
+    '85.4': '7',
+    '88.5': '8',
+    '91.5': '9',
     '94.8': '10',
     '97.4': '11',
     '100.0': '12',
@@ -194,7 +194,7 @@ DTCS_Code = ''
 DTCS_Pol = ''
 Duplex = ''
 Offset = '0.000000'
-Mode = ''
+Mode = 'FM'
 Tune_Step = ''
 Skip = ''
 Comment = ''
@@ -236,11 +236,11 @@ for freq in gmrs_frs_list:
             freq_sub_channel = ctcss[tone_ctcss]
             rToneFreq = tone_ctcss
             cToneFreq = tone_ctcss
-        channel_name = f"CH_{freq_channel_number}_{freq_sub_channel}"
-        if freq in gmrs_mode_NFM:
-            Mode = 'NFM'
-        else:
-            Mode = 'FM'
+        channel_name = f"CH {freq_channel_number} {freq_sub_channel}"
+        # if freq in gmrs_mode_NFM:
+        #     Mode = 'NFM'
+        # else:
+        #     Mode = 'FM'
         if freq in gmrs_frs_pw_2:
             Power = "L"
         else:
