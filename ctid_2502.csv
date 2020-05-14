@@ -1,0 +1,142 @@
+Frequency Output,Frequency Input,FCC Callsign,Agency/Category,Description,Alpha Tag,PL Tone,Mode,Class Station Code,Tag
+37.900000,0.00000,KWX355,La Vergne,Rescue Squad CartoCar,LVRS Car-Car,,FM,BM,EMS-Tac
+118.400000,0.00000,,Smyrna Airport KMQY Aircraft VHF AM,Nashville Approach  Departure,MQY Ap/Dep,,AM,BM,Aircraft
+118.500000,0.00000,,Smyrna Airport KMQY Aircraft VHF AM,Tower  CTAF,MQY Tower,,AM,BM,Aircraft
+119.125000,0.00000,,Smyrna Airport KMQY Aircraft VHF AM,ASOS,MQY ASOS,,AM,B,Aircraft
+121.400000,0.00000,,Smyrna Airport KMQY Aircraft VHF AM,Smyrna Ground Control and Clearance Delivery,MQY Gnd Ctrl,,AM,BM,Aircraft
+121.700000,0.00000,,Smyrna Airport KMQY Aircraft VHF AM,Clearance Delivery,MQY Clnc Del,,AM,BM,Aircraft
+122.950000,0.00000,WFL2,Smyrna Airport KMQY Aircraft VHF AM,Unicom,MQY Unicom,,AM,BM,Aircraft
+123.075000,0.00000,,Murfreesboro Municipal Airport KMBT Aircraft VHF AM,Unicom  CTAF,MBT Unicom,,AM,BM,Aircraft
+128.450000,0.00000,,Murfreesboro Municipal Airport KMBT Aircraft VHF AM,Nashville Approach  Departure,MBT Ap/Dep,,AM,BM,Aircraft
+133.975000,0.00000,,Murfreesboro Municipal Airport KMBT Aircraft VHF AM,AWOS,MBT AWOS,,AM,B,Aircraft
+135.075000,0.00000,,Murfreesboro Municipal Airport KMBT Aircraft VHF AM,GCO,MBT GCO,,AM,BM,Aircraft
+145.230000,144.63000,W4CAT,Skywarn,Skywarn,SkywarnW4CAT,114.8 PL,FM,RM,Ham
+151.040000,0.00000,,County Fire EMS EMA,MEDFIRE  Conference A,MED/FIRE  CONF A,136.5 PL,FMN,BM,Fire-Talk
+151.490000,154.95000,WQQP235,County Fire EMS EMA,MEDFIRE Dispatch P25 Simulcast on Analog,MED/FIRE MAIN D,293 NAC,P25,RM,Fire Dispatch
+151.745000,0.00000,,County Fire EMS EMA,Rescue Squad  Talkaround,RESCUE TALK,,FMN,M,EMS-Talk
+152.397500,0.00000,WQIJ645,Businesses Retail,Stones River Mall,StonesRvMall,306 DPL,FMN,RM,Business
+154.100000,158.97000,WQCK438,Smyrna Airport KMQY Airport Operations,Airport Authority,SRCAA,151.4 PL,FM,RM,Other
+154.220000,0.00000,WPJR992,Murfreesboro,Fire MOSCAD Tone Out Data For Dispatch,MFD MOSCAD,,Telm,BM,Data
+154.340000,0.00000,WPKL705,La Vergne,Fire Department  Backup,LVFD BU 2,192.8 PL,FMN,BM,Fire-Tac
+154.490000,0.00000,WPNQ355,Murfreesboro,Water  Sewer,MW-S OP1,071 DPL,FMN,RM,Utilities
+154.570000,0.00000,,Businesses Retail,Walmart Memorial Blvd,Walmart MB,131 DPL,FMN,M,Business
+154.570000,0.00000,,Businesses Retail,WalMart S Rutherford,WalMart,,FMN,M,Business
+154.600000,0.00000,,Businesses Retail,Walmart Old Fort Pkwy,Walmart OF,77.0 PL,FMN,M,Business
+154.755000,156.01500,WQQP235,Interop,VTNMA Local Access,VTNMA LOCAL,051 DPL,FMN,RM,Interop
+154.755000,156.01500,WQQP235,Interop,VTNMA Statewide Access,VTNMA STATE,100.0 PL,FMN,RM,Interop
+154.980000,154.01000,KNDZ235,Murfreesboro,Fire Dispatch Main,MFD MAIN,123.0 PL,FMN,RM,Fire Dispatch
+155.085000,158.89500,WQQP235,County Fire EMS EMA,MEDFIRE  Operations Bravo,MED/FIRE OPS B,146.2 PL,FMN,RM,Fire-Tac
+155.160000,154.07000,WPKL705,La Vergne,Fire Department  Backup,LVFD BU 1,136.5 PL,FMN,RM,Fire Dispatch
+155.235000,0.00000,KXX626,County Fire EMS EMA,MEDFIRE  Unit Repeaters,MED/FIRE XTNDRS,CSQ,FMN,BM,EMS-Tac
+155.280000,0.00000,,County Fire EMS EMA,MEDFIRE  Operations Delta,MED/FIRE OPS D,CSQ,FMN,BM,Fire-Tac
+155.550000,159.76500,WPFW511,County Fire EMS EMA,MEDFIRE  Operations Charlie,MED/FIRE OPS C,136.5 PL,FMN,RM,Fire-Tac
+155.880000,0.00000,,County Fire EMS EMA,MEDFIRE  Events,MED/FIRE  EVENTS,054 DPL,FMN,BM,Fire-Tac
+158.430000,0.00000,WNZL982,Businesses Industrial,Mahle Filter Systems  Mold Maintenance,MFS Ops MM,CC 8|TG 600|SL 1,DMR,RM,Business
+158.430000,0.00000,WNZL982,Businesses Industrial,Mahle Filter Systems  ShippingReceiving,MFS Ops SR,CC 8|TG 602|SL 1,DMR,RM,Business
+158.745000,155.98500,KAG384,County Fire EMS EMA,MEDFIRE Operations Alpha,MED/FIRE OPS A,136.5 PL,FMN,RM,Fire-Tac
+158.805000,150.79000,WPHQ774,County Fire EMS EMA,MEDFIRE Dispatch Analog Simulcast on P25,MED/FIRE MAIN A,110.9 PL,FMN,BM,Fire Dispatch
+159.210000,156.16500,KNDZ235,Murfreesboro,Fire Dispatch Standby CH,MFD STNDBY,051 DPL,FMN,RM,Fire-Tac
+159.660000,0.00000,WNZL982,Businesses Industrial,Mahle Filter Systems  Presses,MFS Ops PRESS,CC 9|TG 605|SL 1,DMR,RM,Business
+159.660000,0.00000,WNZL982,Businesses Industrial,Mahle Filter Systems  Maintenance,MFS Ops MAINT,CC 9|TG 606|SL 1,DMR,RM,Business
+159.795000,0.00000,WPPE463,Murfreesboro,Water  Sewer,MW-S OP2,054 DPL,FMN,RM,Utilities
+224.360000,0.00000,WR3S,General Amateur Radio,Murfreesboro,224.360,,FM,RM,Ham
+233.100000,0.00000,,Smyrna Airport KMQY Aircraft UHF AM,Tower,MQY Tower,,AM,BM,Aircraft
+451.750000,0.00000, ,  General Mills  Yoplait Factory,Site 001 Murfreesboro,,,DMR,,TRS
+451.787500,456.78750,WQQW941,Businesses Retail,Amazon Fulfillment Center,AFC 1,CC 8|TG *|SL 1,DMR,RM,Business
+451.925000,0.00000, ,  Nissan Manufacturing Plant  Smyrna,Site 001 Nissan Battery Plant,,,DMR,,TRS
+452.137500,0.00000,WQGC948,County Schools,County Schools,Schools 1,346 DPL,FMN,RM,Schools
+452.150000,457.15000,KNNV449,Smyrna,Fire Department linked to Smyrna TRS,Smyrna Fire,131.8 PL,FMN,RM,Fire Dispatch
+452.275000,457.27500,WQQW941,Businesses Retail,Amazon Fulfillment Center  Problem Resolution,AFC Problem,CC 9|TG *|SL 1,DMR,RM,Business
+452.600000,0.00000,WQSF847,Businesses Industrial,Americold Logistics  ShippingReceiving,AC LOGISTIC,,FMN,M,Business
+452.637500,0.00000,WQGC948,County Schools,County Schools,Schools 2,454 DPL,FMN,RM,Schools
+452.875000,457.87500,WSB879,Murfreesboro,Police Administration,MPD ADMIN,114.8 PL,FMN,RM,Law Talk
+453.012500,458.01250,WQQW941,Businesses Retail,Amazon Fulfillment Center,AFC 2,CC 10|TG *|SL 1,DMR,RM,Business
+453.162500,0.00000,WPEE501,County Law Enforcement,County Workhouse,Workhouse,023 DPL,FMN,RM,Corrections
+453.325000,458.32500,WQUL987,Murfreesboro,Police Dispatch West,MPD DISP WEST,141.3 PL,FMN,RM,Law Dispatch
+453.400000,0.00000,WNNB992,Murfreesboro,Street Department,MSTREETS,71.9 PL,FMN,RM,Public Works
+453.537500,458.53750,WQRL419,Murfreesboro,Public Transit,MTRANSIT,,FMN,RM,Transportation
+453.750000,458.75000,WQQP235,County Law Enforcement,Sheriff Operations 2,SO OPS 2,146.2 PL,FMN,RM,Law Tac
+453.837500,458.83750,WQQP235,County Law Enforcement,Sheriff Operations 1,SO OPS 1,118.8 PL,FMN,RM,Law Tac
+458.900000,0.00000,WFS750,County Law Enforcement,Sheriff CartoCar Simplex,SO CAR to CAR,131.8 PL,FMN,M,Law Talk
+460.050000,465.05000,WNNI348,La Vergne,Police Department  Backup,LVPD BACKUP,131.8 PL,FMN,RM,Law Dispatch
+460.162500,465.16250,WFS750,County Law Enforcement,Sheriff Detectives,SO DETECTIVES,071 DPL,FMN,RM,Law Tac
+460.200000,465.20000,WFS750,County Law Enforcement,Sheriff Dispatch  Analog,SO DISPATCH A,131.8 PL,FMN,RM,Law Dispatch
+460.250000,465.25000,WFS750,County Law Enforcement,Sheriff Dispatch  Digital,SO DISPATCH D,293 NAC,P25,RM,Law Dispatch
+460.250000,465.25000,WQQP235,County Law Enforcement,Sheriff Operations 3,SO OPS 3,131.8 PL,FMN,RM,Law Tac
+460.287500,0.00000,WFS750,County Law Enforcement,Sheriff Jail,SO Jail,141.3 PL,FMN,RM,Corrections
+460.350000,465.35000,WSB879,Murfreesboro,Police CartoCar,MPD CAR-CAR,131.8 PL,FMN,RM,Law Talk
+460.375000,465.37500,WSB879,Murfreesboro,Police Dispatch East,MPD DISP EAST,131.8 PL,FMN,RM,Law Dispatch
+460.400000,465.40000,WSB879,Interop,UTNMA Local Access,UTNMA LOCAL,051 DPL,FMN,RM,Interop
+460.400000,465.40000,WSB879,Interop,UTNMA Statewide Acess,UTNMA STATE,127.3 PL,FMN,RM,Interop
+460.425000,465.42500,WFS750,County Law Enforcement,Sheriff CartoCar Repeater,SO CAR to CAR,131.8 PL,FMN,RM,Law Talk
+460.462500,465.46250,WQQP235,County Law Enforcement,Sheriff Operations 4,SO OPS 4,051 DPL,FMN,RM,Law Tac
+461.275000,466.27500,WQQW941,Businesses Retail,Amazon Fulfillment Center  Facilities,AFC Facilities,CC 11|TG *|SL 1,DMR,RM,Business
+461.425000,0.00000, ,  General Mills  Pillsbury Factory,Site 001 Murfreesboro,,,DMR,,TRS
+461.700000,0.00000, ,  General Mills  Pillsbury Factory,Site 001 Murfreesboro,,,DMR,,TRS
+461.925000,466.92500,WQQW941,Businesses Retail,Amazon Fulfillment Center,AFC 3,CC 12|TG *|SL 1,DMR,RM,Business
+461.950000,0.00000,KNDS534,Murfreesboro,City Schools  Buses,MSCHOOL BUS,141.3 PL,FMN,RM,Schools
+462.050000,0.00000, ,  General Mills  Pillsbury Factory,Site 001 Murfreesboro,,,DMR,,TRS
+462.075000,0.00000, ,  General Mills  Yoplait Factory,Site 001 Murfreesboro,,,DMR,,TRS
+462.200000,467.20000,WPTI674,Businesses General Business,WWL Vehicle Services,WWL Vehicle,CC 10|TG 1|SL 1,DMR,RM,Business
+462.250000,0.00000,KUQ496,Businesses Industrial,Bridgestone Tire Manufacuring,BRIDGESTM,123.0 PL,FMN,RM,Business
+462.270000,0.00000,WPEE492,Businesses Industrial,Ingram Book Company  Production Floor,IBC LSI PROD,254.1 PL,FMN,M,Business
+462.275000,0.00000, ,  General Mills  Yoplait Factory,Site 001 Murfreesboro,,,DMR,,TRS
+462.275000,0.00000,WPEE492,Businesses Industrial,Ingram Book Company  Properties Security,IBC SECURITY,103.5 PL,FMN,RM,Business
+462.450000,0.00000, ,  General Mills  Yoplait Factory,Site 001 Murfreesboro,,,DMR,,TRS
+462.475000,467.47500,WNPK819,La Vergne,Public Works,LaVergne PW,,FMN,RM,Public Works
+462.500000,0.00000,KUQ497,Businesses Industrial,Bridgestone Tire Manufacturing,BRIDGESTM,127.3 PL,FMN,RM,Business
+462.512500,0.00000,WQUV743,Murfreesboro,City Schools,MSCHOOL OPS,179.9 PL,FMN,RM,Schools
+462.975000,467.97500,WQQP235,County Fire EMS EMA,EMS UHF Dispatch,EMS UHF DISPATCH,110.9 PL,FMN,RM,EMS Dispatch
+463.225000,0.00000, ,  Nissan Manufacturing Plant  Smyrna,Site 001 Nissan Battery Plant,,,DMR,,TRS
+463.425000,0.00000,WQHJ521,County Schools,Oakland High School,OAKLAND HIGH,141.3 PL,FMN,RM,Schools
+463.587500,0.00000, ,  Nissan Manufacturing Plant  Smyrna,Site 001 Nissan Battery Plant,,,DMR,,TRS
+463.625000,0.00000, ,  General Mills  Pillsbury Factory,Site 001 Murfreesboro,,,DMR,,TRS
+463.737500,468.73750,WRAN907,Businesses Facilities,St Thomas Rutherford Hospital  Security,STRH SEC,CC 2|TG 8|SL 2,DMR,RM,Hospital
+464.187500,0.00000,WQWL921,Businesses Industrial,Interstate Warehouse  Shipping  Receiving,IS WAREHOUSE,91.5 PL,FMN,RM,Business
+464.425000,469.42500,WRAN907,Businesses Facilities,St Thomas Rutherford Hospital  Maintenance  Engineering,STRH MAINT,CC 1|TG 2|SL 1,DMR,RM,Hospital
+464.475000,0.00000, ,  General Mills  Pillsbury Factory,Site 001 Murfreesboro,,,DMR,,TRS
+464.637500,0.00000,WQLL597,Businesses Facilities,Adams Place Assisted Living,AdamsPlace,072 DPL,FMN,RM,Business
+464.800000,469.80000,WQQW941,Businesses Retail,Amazon Fulfillment Center,AFC 4,CC 14|TG *|SL 1,DMR,RM,Business
+464.950000,469.95000,WNBQ788	,Businesses Transportation,City Cab Company,CITY CAB,CC 15|TG 8953318|SL 2,DMR,RM,Business
+464.950000,469.95000,WNBQ788	,Businesses Transportation,Middle TN Taxi Co,MiddleTNTaxi,CC 15|TG 2112|SL 1,DMR,RM,Business
+467.337500,0.00000,,Businesses Retail,Target Murfreesboro,Target,,FM,M,Business
+467.350000,0.00000,WPEE492,Businesses Industrial,Ingram Book Company  Maintenance,IBC LSI MAINT,88.5 PL,FMN,M,Business
+467.775000,0.00000,,Businesses Retail,Target Murfreesboro,Target,,FM,M,Business
+467.900000,0.00000,,Businesses Retail,Staples,Staples,225.7 PL,FMN,M,Business
+467.900000,0.00000,,Businesses Retail,Target Murfreesboro  Security,TargetScurty,205 DPL,FM,M,Security
+769.181250,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 022 Murfreesboro,,,Project 25,,TRS
+769.256250,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 032 Hoovers Gap,,,Project 25,,TRS
+769.431250,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 022 Murfreesboro,,,Project 25,,TRS
+769.531250,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 032 Hoovers Gap,,,Project 25,,TRS
+769.681250,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 022 Murfreesboro,,,Project 25,,TRS
+769.931250,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 022 Murfreesboro,,,Project 25,,TRS
+770.031250,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 031 Tiger Hill,,,Project 25,,TRS
+770.118750,0.00000, ,  Rutherford County Public Safety,Site 001 Simulcast,,,Project 25,,TRS
+770.181250,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 022 Murfreesboro,,,Project 25,,TRS
+770.306250,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 031 Tiger Hill,,,Project 25,,TRS
+770.556250,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 032 Hoovers Gap,,,Project 25,,TRS
+770.856250,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 032 Hoovers Gap,,,Project 25,,TRS
+771.018750,0.00000, ,  Rutherford County Public Safety,Site 001 Simulcast,,,Project 25,,TRS
+771.206250,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 032 Hoovers Gap,,,Project 25,,TRS
+771.293750,0.00000, ,  Rutherford County Public Safety,Site 001 Simulcast,,,Project 25,,TRS
+771.331250,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 031 Tiger Hill,,,Project 25,,TRS
+771.656250,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 031 Tiger Hill,,,Project 25,,TRS
+771.931250,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 031 Tiger Hill,,,Project 25,,TRS
+772.331250,0.00000, ,  Rutherford County Public Safety,Site 001 Simulcast,,,Project 25,,TRS
+772.606250,0.00000, ,  Rutherford County Public Safety,Site 001 Simulcast,,,Project 25,,TRS
+772.856250,0.00000, ,  Rutherford County Public Safety,Site 001 Simulcast,,,Project 25,,TRS
+773.181250,0.00000, ,  Rutherford County Public Safety,Site 001 Simulcast,,,Project 25,,TRS
+773.481250,0.00000, ,  Rutherford County Public Safety,Site 001 Simulcast,,,Project 25,,TRS
+773.531250,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 031 Tiger Hill,,,Project 25,,TRS
+773.731250,0.00000, ,  Rutherford County Public Safety,Site 001 Simulcast,,,Project 25,,TRS
+851.062500,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 064 Smyrna,,,Project 25,,TRS
+851.400000,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 064 Smyrna,,,Project 25,,TRS
+851.675000,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 064 Smyrna,,,Project 25,,TRS
+852.037500,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 064 Smyrna,,,Project 25,,TRS
+852.575000,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 064 Smyrna,,,Project 25,,TRS
+852.950000,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 064 Smyrna,,,Project 25,,TRS
+853.400000,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 064 Smyrna,,,Project 25,,TRS
+853.675000,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 064 Smyrna,,,Project 25,,TRS
+853.987500,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 064 Smyrna,,,Project 25,,TRS
+854.987500,809.98750,WNXM914,Smyrna Airport KMQY Airport Operations,Airport Authority,SRCAA,,FM,RM,Other
+855.412500,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 068 Readyville,,,Project 25,,TRS

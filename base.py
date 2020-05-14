@@ -1,3 +1,5 @@
+import csv
+
 ctcss = {
     '67.0': '1',
     '71.9': '2',
@@ -184,7 +186,7 @@ gmrs_mode_NFM = (
     '467.712500')
 
 # https://chirp.danplanet.com/projects/chirp/wiki/MemoryEditorColumns
-Location = 40
+Location = 1
 Frequency = ''
 Name = ''
 Tone_Mode = ''
@@ -213,44 +215,91 @@ DtcsCode = '023'
 DtcsPolarity = 'NN'
 TStep = '5.00'
 DVCODE = ''
+file_format_chirp = f"{Location},{channel_name},{Frequency},{Duplex},{Offset},{Tone},{rToneFreq},{cToneFreq},{DtcsCode},{DtcsPolarity},{Mode},{TStep},{Skip},{Comment},{URCALL},{RPT1CALL},{RPT2CALL},{DVCODE}\n"
 
-# try:
-#     f = open("chirp_GMRS_FRS.csv", "x")
-# except FileExistsError:
-#     print("File already existed")
-
-print('Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE')
-f = open("chirp_GMRS_FRS.csv", "w")
-f.write(f'Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE\n')
-f.close()
-
-for freq in gmrs_frs_list:
-    for tone_ctcss in ctcss_list:
-        rToneFreq = tone_ctcss
-        cToneFreq = tone_ctcss
-        # Sets the channel
-        if freq in gmrs_frs:
-            freq_channel_number = gmrs_frs[freq]
-        # sets the sub channel
-        if tone_ctcss in ctcss:
-            freq_sub_channel = ctcss[tone_ctcss]
+def add_frs_channels():
+    Location = 40
+    Frequency = ''
+    Tone = 'TSQL'
+    Offset = '0.000000'
+    Mode = 'FM'
+    DtcsCode = '023'
+    DtcsPolarity = 'NN'
+    TStep = '5.00'
+    Skip = ''
+    print(
+        'Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE')
+    f = open("chirp_GMRS_FRS.csv", "w")
+    f.write(
+        f'Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE\n')
+    f.close()
+    for freq in gmrs_frs_list:
+        Frequency = freq
+        for tone_ctcss in ctcss_list:
             rToneFreq = tone_ctcss
             cToneFreq = tone_ctcss
-        channel_name = f"CH {freq_channel_number} {freq_sub_channel}"
-        # if freq in gmrs_mode_NFM:
-        #     Mode = 'NFM'
-        # else:
-        #     Mode = 'FM'
-        if freq in gmrs_frs_pw_2:
-            Power = "L"
-        else:
-            Power = 'L'
+            # Sets the channel
+            if freq in gmrs_frs:
+                freq_channel_number = gmrs_frs[freq]
+            # sets the sub channel
+            if tone_ctcss in ctcss:
+                freq_sub_channel = ctcss[tone_ctcss]
+                rToneFreq = tone_ctcss
+                cToneFreq = tone_ctcss
+            channel_name = f"CH {freq_channel_number} {freq_sub_channel}"
+            if freq in gmrs_frs_pw_2:
+                Power = "L"
+            else:
+                Power = 'L'
+            if tone_ctcss == '67.0':
+                Skip = ''
+            else:
+                Skip = 'S'
+            Location += 1
+            # FIle for CHIRP
+            f = open("chirp_GMRS_FRS.csv", "a")
+            file_file_chirp = f"{Location},{channel_name},{freq},{Duplex},{Offset},{Tone},{rToneFreq},{cToneFreq},{DtcsCode},{DtcsPolarity},{Mode},{TStep},{Skip},{Comment},{URCALL},{RPT1CALL},{RPT2CALL},{DVCODE}\n"
+            f.write(file_file_chirp)
+            f.close()
+
+
+with open('ctid_2502.csv', mode='r') as csv_file:
+    csv_reader = csv.DictReader(csv_file)
+    line_count = 0
+    for row in csv_reader:
+        if line_count == 0:
+            print(f'column headers are {", ".join(row)}')
+            line_count += 1
+        # Location = 0
+        Frequency = row["Frequency Output"]
+        Name = row["Alpha Tag"]
+        Tone_Mode = ''
+        Tone = 'TSQL'
+        ToneSql = ''
+        DTCS_Code = ''
+        DTCS_Pol = ''
+        Duplex = ''
+        Offset = '0.000000'
+        Mode = row["Mode"]
+        Tune_Step = ''
+        Skip = ''
+        Comment = ''
+        URCALL = ''
+        RPT1CALL = ''
+        RPT2CALL = ''
+        DTCS_Rx_Code = ''
+        Cross_Mode = ''
+        channel_name = ''
+        freq_channel_number = ''
+        freq_sub_channel = ''
+        Power = ''
+        rToneFreq = row["PL Tone"]
+        cToneFreq = ''
+        DtcsCode = '023'
+        DtcsPolarity = 'NN'
+        TStep = ''
+        DVCODE = ''
+        # print(f'{row}')
+        file_file_chirp_2 = f"{Location},{channel_name},{Frequency},{Duplex},{Offset},{Tone},{rToneFreq},{cToneFreq},{DtcsCode},{DtcsPolarity},{Mode},{TStep},{Skip},{Comment},{URCALL},{RPT1CALL},{RPT2CALL},{DVCODE}"
+        print(file_file_chirp_2)
         Location += 1
-
-        # FIle for CHIRP
-        f = open("chirp_GMRS_FRS.csv", "a")
-        file_file_chirp = f"{Location},{channel_name},{freq},{Duplex},{Offset},{Tone},{rToneFreq},{cToneFreq},{DtcsCode},{DtcsPolarity},{Mode},{TStep},{Skip},{Comment},{URCALL},{RPT1CALL},{RPT2CALL},{DVCODE}\n"
-        # print(file_file)
-        f.write(file_file_chirp)
-        f.close()
-
