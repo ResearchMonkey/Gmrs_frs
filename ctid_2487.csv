@@ -1,0 +1,96 @@
+Frequency Output,Frequency Input,FCC Callsign,Agency/Category,Description,Alpha Tag,PL Tone,Mode,Class Station Code,Tag
+37.260000,0.00000,WPMR229,Spring Hill,Utilities,SpgHillUtils,,FM,BM,Utilities
+45.160000,0.00000,KYU860,Columbia,Parks  Recreation,ColmbaPrks16,,FM,BM,Public Works
+45.360000,0.00000,KYU860,Columbia,Parks  Recreation,ColmbaPrks36,,FM,BM,Public Works
+147.120000,0.00000,W4GGM,Maury Amateur Radio Club,2 Meter Repeater,W4GGM 2M,127.3 PL,FM,RM,Ham
+147.285000,147.88500,AG4TI,Maury Amateur Radio Club,Culleoka Repeater,AG4TI,131.8 PL,FM,RM,Ham
+151.002500,156.14250,WQHX807,Maury County,Highway Department,MCDOT,,FMN,RM,Public Works
+151.400000,156.19500,WQOX539,Maury County,Sheriff VHF Operations Digital,MCSO-VHF D,,NXDN,RM,Law Tac
+152.270000,0.00000,WQBU852,Maury County,Moore Care Ambulance Services Non Emergency Transport,MCA-NET,,FMN,RM,Business
+153.000000,0.00000,,Maury County,Life Flight Dispatch VHF,LIFEFLIGHT V,032 DPL,FMN,BM,EMS Dispatch
+154.175000,153.77000,KNES990,Spring Hill,Fire Department,SpgHillFD,192.8 PL,FMN,RM,Fire Dispatch
+154.220000,0.00000,WNZB214,Maury County,Maury Regional EMS  Dispatch,MCEMS DISP,125 DPL,FMN,BM,EMS Dispatch
+155.625000,0.00000,,Maury County,Emergency Management  County Fire Dispatch,MCEMA-FIRE,107.2 PL,FMN,RM,Fire Dispatch
+159.180000,0.00000,WNRZ359,Maury County,Road Salt Trucks  Dispatch Ch 1,SALT TRUCKS,315 DPL,FMN,BM,Public Works
+443.175000,0.00000,W4GGM,Maury Amateur Radio Club,70 Centimeter Repeater,W4GGM 70CM,100.0 PL,FM,RM,Ham
+443.425000,0.00000,AG4TI,Maury Amateur Radio Club,Culleoka,AG4TI 443,91.5 PL,FM,RM,Ham
+451.025000,0.00000,,Spring Hill,Public Works  Police Department CartoCar 15,SpgHillPWks,,FM,,Public Works
+451.075000,456.07500,KIF409,Columbia,Power and Water Systems  Power Central,CPWS-POWER C,CC 11|TG 1042|SL 1,DMR,RM,Utilities
+451.075000,456.07500,KIF409,Columbia,Power and Water Systems  Broadband Central,CPWS-BROADBAND C,CC 11|TG 1142|SL 2,DMR,RM,Utilities
+451.225000,0.00000,WPRL917,Maury County,Life Flight Dispatch UHF,LIFEFLIGHT U,94.8 PL,FMN,RM,EMS Dispatch
+451.550000,0.00000, ,  General Motors USA,Site 017 Spring Hill Manufacturing,,,DMR,,TRS
+451.550000,0.00000, ,  Duck River Electric Membership Corporation,Site 001 Columbia,,,Project 25,,TRS
+451.625000,456.62500,WPTH772,Spring Hill,Water Department,SpgHill WTR,,FMN,RM,Utilities
+451.700000,0.00000, ,  General Motors USA,Site 017 Spring Hill Manufacturing,,,DMR,,TRS
+451.725000,456.72500,KIF409,Columbia,Power and Water Systems  Admin Central,CPWS-ADMIN C,CC 15|TG 1342|SL 2,DMR,RM,Utilities
+451.725000,456.72500,KIF409,Columbia,Power and Water Systems  Water Central,CPWS-WATER C,CC 15|TG 1242|SL 1,DMR,RM,Utilities
+451.950000,0.00000, ,  General Motors USA,Site 017 Spring Hill Manufacturing,,,DMR,,TRS
+452.212500,0.00000, ,  General Motors USA,Site 017 Spring Hill Manufacturing,,,DMR,,TRS
+452.325000,0.00000, ,  General Motors USA,Site 017 Spring Hill Manufacturing,,,DMR,,TRS
+452.500000,457.50000,KIF409,Columbia,Power and Water Systems  Power South,CPWS-POWER S,CC 12|TG 1042|SL 1,DMR,RM,Utilities
+452.500000,457.00000,KIF409,Columbia,Power and Water Systems  Broadband South,CPWS-BROADBAND S,CC 12|TG 1142|SL 2,DMR,RM,Utilities
+452.625000,0.00000, ,  General Motors USA,Site 017 Spring Hill Manufacturing,,,DMR,,TRS
+452.700000,0.00000, ,  Duck River Electric Membership Corporation,Site 001 Columbia,,,Project 25,,TRS
+452.725000,457.72500,KIF409,Columbia,Power and Water Systems  Broadband East,CPWS-BROADBAND E,CC 15|TG 1142|SL 2,DMR,RM,Utilities
+452.725000,457.72500,KIF409,Columbia,Power and Water Systems  Power East,CPWS-POWER E,CC 15|TG 1042|SL 1,DMR,RM,Utilities
+453.050000,458.05000,KIP690,Mount Pleasant,Police Department  Operations,MtPleasPDOps,141.3 PL,FMN,RM,Law Tac
+453.075000,458.07500,WPWG336,Maury County,Fire Department  Backup  Interop,MCFD MUTAID,192.8 PL,FMN,RM,Interop
+453.150000,458.15000,WYK530,Columbia,Fire Department Analog Interop,CFD-MUTAID,179.9 PL,FMN,RM,Interop
+453.150000,458.15000,WYK530,Columbia,Fire Department Dispatch Digital,CFD-DISP,,NXDN,RM,Fire Dispatch
+453.162500,458.16250,WYK530,Columbia,Fire Department Digital,CFD-OPS 1,,NXDN,RM,Fire-Tac
+453.187500,458.18750,WPYH801,Maury County,Sheriffs Department  Dispatch Analog,MCSO-DISP1 A,192.8 PL,FMN,RM,Law Dispatch
+453.187500,458.18750,WQOX539,Maury County,Sheriff  Dispatch Digital,MCSO-DISP1 D,,NXDN,RM,Law Dispatch
+453.200000,458.20000,WPMA747,Spring Hill,Police Department  Operations,SpgHillPDSec,136.5 PL,FMN,RM,Law Tac
+453.262500,458.26250,WNEC786,Columbia,Police Department 1 East,CPD-1 EAST,1 RAN,NXDNe,RM,Law Tac
+453.287500,458.28750,WQOX539,Maury County,Sheriff  Operations Digital,MCSO-OPS D,,NXDN,RM,Law Tac
+453.362500,458.36250,WQOX539,Maury County,Sheriff  Operations Digital,MCSO-OPS3 D,,NXDN,RM,Law Tac
+453.375000,458.37500,WNRW396,Maury County,Public Transportation,MC PUB TRNSP,146.2 PL,FMN,RM,Transportation
+453.387500,458.38750,WNEC786,Columbia,Police Department Digital Encryption can be used,CPD-4D,,NXDNe,RM,Law Tac
+453.400000,0.00000,WPYW913,Spring Hill,Utilities,SpgHillUtils,,FM,BM,Utilities
+453.462500,458.46250,WQTL309,Maury County,Emergency Management  Storm Spotter Operations UTAC41,MCEMA SSOPS,156.7 PL,FMN,RM,Emergency Ops
+453.512500,458.51250,WPYH801,Maury County,Emergency Management  Disaster Coordination Mobile Repeater,MCEMA CMND,179.9 PL,FMN,RM,Emergency Ops
+453.562500,458.56250,WQOX539,Maury County,Sheriff  Operations Digital,MCSO-OPS4 D,,NXDN,RM,Law Tac
+453.612500,458.61250,WYK530,Columbia,Fire Department 1 Central,CFD-1 Central,1 RAN,NXDN,RM,Fire-Tac
+453.637500,458.63750,WQOX539,Maury County,Sheriff  Operations Digital,MCSO-OPS2 D,,NXDN,RM,Law Tac
+453.700000,458.70000,KIP690,Mount Pleasant,Fire Department  Dispatch,MPFD Disp,141.3 PL,FMN,RM,Fire Dispatch
+453.812500,0.00000,,Maury County,Emergency Management  Operations 2,MCEMA OPS 2,179.9 PL,FMN,M,Emergency Ops
+453.925000,458.92500,WNEC786,Columbia,Police Department 1 Central,CPD-1 CENTRAL,1 RAN,NXDNe,RM,Law Tac
+453.950000,458.95000,WNKU796,Columbia,Public Works,ColmbaPWrks,,FM,RM,Public Works
+460.037500,465.03750,WQOX539,Maury County,Sheriff  Operations Digital,MCSO-OPS5 D,,NXDN,RM,Law Tac
+460.062500,465.06250,WPMA747,Spring Hill,Police Department  Dispatch,SpgHillPDPri,127.3 PL,FMN,RM,Law Dispatch
+460.137500,465.13750,WYK530,Columbia,Fire Department 1 East,CFD-1 EAST,1 RAN,NXDN,RM,Fire-Tac
+460.150000,465.15000,KUL720,Maury County,Sheriffs Department  Dispatch Analog,MCSO-DISP2 A,127.3 PL,FMN,RM,Law Dispatch
+460.212500,465.21250,WQOX539,Maury County,Sheriff  Operations Digital,MCSO-OPS6 D,,NXDN,RM,Law Tac
+460.262500,465.26250,WYK530,Columbia,Fire Department Digital,CFD-OPS 3,,NXDN,RM,Fire-Tac
+460.312500,0.00000,,Maury County,Interconnect TEMA,TEMA MUTAID,,FMN,RM,Emergency Ops
+460.350000,465.35000,WNEC786,Columbia,Police Department Analog Dispatch No used,ColmbaPD350,127.3 PL,FMN,RM,Law Dispatch
+460.350000,465.35000,WNEC786,Columbia,Police Department Dispatch Digital Encryption can be used,CPD-DISP1 D,,NXDNe,RM,Law Dispatch
+460.512500,0.00000,,Columbia,Police Department  SWAT 13,ColmbaPDSWAT,127.3 PL,FM,M,Law Tac
+461.025000,465.02500,KIF409,Columbia,Power and Water Systems  Water South,CPWS-WATER S,CC 14|TG 1242|SL 1,DMR,RM,Utilities
+461.025000,465.02500,KIF409,Columbia,Power and Water Systems  Admin South,CPWS-ADMIN S,CC 14|TG 1342|SL 2,DMR,RM,Utilities
+461.100000,465.10000,KIF409,Columbia,Power and Water Systems  Water East,CPWS-WATER E,CC 15|TG 1242|SL 1,DMR,RM,Utilities
+461.100000,465.10000,KIF409,Columbia,Power and Water Systems  Admin East,CPWS-ADMIN E,CC 15|TG 1342|SL 2,DMR,RM,Utilities
+461.175000,466.17500,WQRU939,Maury County,Columbia State Community College  Securityoperations,CSCC-SEC/OPS,,DMR,RM,Schools
+461.225000,0.00000, ,  Duck River Electric Membership Corporation,Site 001 Columbia,,,Project 25,,TRS
+461.487500,0.00000, ,  General Motors USA,Site 017 Spring Hill Manufacturing,,,DMR,,TRS
+461.600000,0.00000, ,  Duck River Electric Membership Corporation,Site 001 Columbia,,,Project 25,,TRS
+461.775000,0.00000,,Columbia,Police Department  Car to Car  Private 6,ColmbaPDC2C,CSQ,FM,M,Law Talk
+462.037500,0.00000, ,  General Motors USA,Site 017 Spring Hill Manufacturing,,,DMR,,TRS
+462.125000,0.00000, ,  Middle Tennessee TwoWay Columbia,Site 002 Unconfirmed LCN,,,LTR,,TRS
+462.525000,0.00000, ,  General Motors USA,Site 017 Spring Hill Manufacturing,,,DMR,,TRS
+463.012500,0.00000,,Maury County,Maury Regional EMS  Dispatch Simulcast 154220,MCEMS DISP 2,654 DPL,FMN,RM,EMS Dispatch
+463.237500,0.00000,KIF409,Columbia,Power and Water Systems  Direct 1 Simplex,CPWS-DIRECT 1,CC 9|TG 1442|SL *,DMR,M,Utilities
+463.512500,0.00000, ,  General Motors USA,Site 017 Spring Hill Manufacturing,,,DMR,,TRS
+463.537500,0.00000,,Maury County,Sheriffs Department  SWAT 16,MaurySDSWAT,127.3 PL,FMN,M,Law Tac
+467.850000,0.00000,,Maury County,Emergency Management  Operations 3,MCEMA OPS 3,179.9 PL,FMN,M,Emergency Ops
+467.875000,0.00000,,Maury County,Emergency Management  Operations 4,MCEMA OPS 4,179.9 PL,FMN,M,Emergency Ops
+467.900000,0.00000,,Maury County,Emergency Management  Operations 5,MCEMA OPS 5,179.9 PL,FMN,M,Emergency Ops
+467.925000,0.00000,,Maury County,Emergency Management  Operations 6,MCEMA OPS 6,179.9 PL,FMN,M,Emergency Ops
+468.237500,0.00000,KIF409,Columbia,Power and Water Systems  Direct 2 Simplex,CPWS-DIRECT 2,CC 6|TG 1542|SL *,DMR,M,Utilities
+469.500000,0.00000,,Maury County,Sheriffs Department  Jail,MaurySDJail,127.3 PL,FMN,M,Law Tac
+769.206250,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 059 Theta,,,Project 25,,TRS
+770.368750,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 059 Theta,,,Project 25,,TRS
+770.781250,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 059 Theta,,,Project 25,,TRS
+771.581250,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 059 Theta,,,Project 25,,TRS
+773.793750,0.00000, ,  Tennessee Advanced Communications Network TACN,Site 059 Theta,,,Project 25,,TRS
+855.987500,810.98750,KNNH515,Columbia,Wastewater Department,ColmbaWstwtr,,FM,RM,Utilities

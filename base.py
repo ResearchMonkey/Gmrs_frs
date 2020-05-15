@@ -169,10 +169,15 @@ gmrs_mode_NFM = (
 
 freq_tx_range1 = range(400, 512)
 freq_tx_range2 = range(136, 174)
+freq_tx_range = freq_tx_range1, freq_tx_range2
 
-freq__rx_range_FM = 136-180, 230-250, 350-400, 400-512, 700-985
-
-freq__rx_range_AM = 76 - 108, 108 - 136
+freq__rx_range_AM1 = range(76, 108)
+freq__rx_range_AM2 = range(108, 136)
+freq__rx_range_FM1 = range(136, 180)
+freq__rx_range_FM2 = range(230, 250)
+freq__rx_range_FM3 = range(350, 400)
+freq__rx_range_FM4 = range(400, 512)
+freq__rx_range_FM5 = range(700, 985)
 
 # https://chirp.danplanet.com/projects/chirp/wiki/MemoryEditorColumns
 Location = 1
@@ -210,6 +215,14 @@ DVCODE = ''
 # file_format_chirp = f"{Location},{channel_name},{Frequency},{Duplex},{Offset},{Tone},{rToneFreq},{cToneFreq},{DtcsCode},{DtcsPolarity},{Mode},{TStep},{Skip},{Comment},{URCALL},{RPT1CALL},{RPT2CALL},{DVCODE}\n"
 
 
+def write_to_file(file_name, file_values):
+    # file_file_chirp_2 = f"{Location},{channel_name},{Frequency},{Duplex},{Offset},{Tone},{rToneFreq},{cToneFreq},{DtcsCode},{DtcsPolarity},{Mode},{TStep},{Skip},{Comment},{URCALL},{RPT1CALL},{RPT2CALL},{DVCODE}\n"
+    print(file_values)
+    f = open(file_name, "a")
+    f.write(file_values)
+    f.close()
+
+
 def add_frs_channels():
     print("{Location},{channel_name},{Frequency},{Duplex},{Offset},{Tone},{rToneFreq},{cToneFreq},{DtcsCode},{DtcsPolarity},{Mode},{TStep},{Skip},{Comment},{URCALL},{RPT1CALL},{RPT2CALL},{DVCODE}\n")
     f = open("chirp_GMRS_FRS.csv", "w")
@@ -242,76 +255,78 @@ def add_frs_channels():
 
 # add_frs_channels()
 
-with open('ctid_2502.csv', mode='r') as csv_file:
-    csv_reader = csv.DictReader(csv_file)
-    line_count = 0
-    f = open("chirp_GMRS_FRS_download.csv", "w")
-    f.write(
-        f'Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE\n')
-    f.close()
-    for row in csv_reader:
-        if line_count == 0:
-            # print(f'column headers are {", ".join(row)}')
-            line_count += 1
-        Frequency = row["Frequency Input"]
-        abc1 = float(Frequency)
-        abc2 = int(abc1)
-        if abc2 in freq_tx_range1 or abc2 in freq_tx_range2:
-            # print(f'{abc2} in range')
-            # print(freq_tx_range)
-            Name = row["Alpha Tag"]
-            # Tone_Mode = ''
-            Tone = 'TSQL'
-            ToneSql = ''
-            # DTCS_Code = ''
-            # DTCS_Pol = ''
-            # Duplex = ''
-            Offset = '0.000000'
-            Mode = 'FM'
-            # Mode = row["Mode"]
-            # if Mode == 'Project 25':
-            #     Mode = 'FM'
-            # else:
-            #     Mode = row["Mode"]
-            # Tune_Step = ''
-            # Skip = ''
-            # Comment = row['FCC Callsign']
-            # URCALL = ''
-            # RPT1CALL = ''
-            # RPT2CALL = ''
-            # DTCS_Rx_Code = ''
-            # Cross_Mode = ''
-            # channel_name = row["Alpha Tag"]
-            # freq_channel_number = ''
-            # freq_sub_channel = ''
-            # Power = ''
-            a_rToneFreq = re.sub('[^0-9.]', '', row["PL Tone"])
-            if a_rToneFreq in ctcss:
-                rToneFreq = a_rToneFreq
-                cToneFreq = a_rToneFreq
-            else:
-                rToneFreq = ''
-                cToneFreq = ''
-            DtcsCode = '023'
-            DtcsPolarity = 'NN'
-            TStep = '5.00'
-            # DVCODE = ''
-            # print(f'{row}')
-            file_file_chirp_2 = f"{Location},{channel_name},{Frequency},{Duplex},{Offset},{Tone},{rToneFreq},{cToneFreq},{DtcsCode},{DtcsPolarity},{Mode},{TStep},{Skip},{Comment},{URCALL},{RPT1CALL},{RPT2CALL},{DVCODE}\n"
-            print(file_file_chirp_2)
-            Location += 1
-            f = open("chirp_GMRS_FRS_download.csv", "a")
-            f.write(file_file_chirp_2)
-            f.close()
 
-# rn = range(135, 512)
-# abc = "133.900000"
-# print(abc)
-# abc_1 = float(abc)
-# print(abc_1)
-# abc2 = int(abc_1)
-# print(abc2)
-# if abc2 in rn:
-#     print("in")
-# else:
-#     print("not in")
+def csv_to_chirp_import(file_to_read, file_to_write):
+    with open(file_to_read, mode='r') as csv_file:
+        csv_reader = csv.DictReader(csv_file)
+        line_count = 0
+        f = open(file_to_write, "w")
+        f.write(
+            f'Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE\n')
+        f.close()
+        Location = 1
+        for row in csv_reader:
+            if line_count == 0:
+                # print(f'column headers are {", ".join(row)}')
+                line_count += 1
+            Frequency = row["Frequency Output"]
+            abc1 = float(Frequency)
+            abc2 = int(abc1)
+            channel_name = row["Alpha Tag"]
+            # will only process lines with in the defined freq range
+            # file_file_chirp_2 = f"{Location},{channel_name},{Frequency},{Duplex},{Offset},{Tone},{rToneFreq},{cToneFreq},{DtcsCode},{DtcsPolarity},{Mode},{TStep},{Skip},{Comment},{URCALL},{RPT1CALL},{RPT2CALL},{DVCODE}\n"
+            if abc2 in freq_tx_range1\
+                    or abc2 in freq_tx_range2\
+                    or abc2 in freq__rx_range_AM1\
+                    or abc2 in freq__rx_range_AM2\
+                    or abc2 in freq__rx_range_FM1\
+                    or abc2 in freq__rx_range_FM2\
+                    or abc2 in freq__rx_range_FM3\
+                    or abc2 in freq__rx_range_FM4\
+                    or abc2 in freq__rx_range_FM5:
+                channel_name = row["Alpha Tag"]
+                if "AM" in row["Mode"]:
+                    Mode = "AM"
+                    Frequency = row["Frequency Output"]
+                    Offset = '0.000000'
+                    Tone = ''
+                    Duplex = 'off'
+                    rToneFreq = '88.5'
+                    cToneFreq = '88.5'
+                    DtcsCode = '023'
+                    DtcsPolarity = 'NN'
+                    TStep = '5.00'
+                    Location += 1
+                    file_file_chirp_2 = f"{Location},{channel_name},{Frequency},{Duplex},{Offset},{Tone},{rToneFreq},{cToneFreq},{DtcsCode},{DtcsPolarity},{Mode},{TStep},{Skip},{Comment},{URCALL},{RPT1CALL},{RPT2CALL},{DVCODE}\n"
+                    write_to_file(file_to_write, file_file_chirp_2)
+                if 'PL' in row["PL Tone"]:
+                    a_rToneFreq = re.sub('[^0-9.]', '', row["PL Tone"])
+                    print(a_rToneFreq)
+                    if 'DPL' in row["PL Tone"]:
+                        Mode = 'DTCS'
+                        Tone = 'DTCS'
+                        print("DPL in PL tone")
+                        DtcsCode = a_rToneFreq
+                    elif "CC" in row["PL Tone"]:
+                        ctcss_type = 'unknown'
+                    else:
+                        Mode = 'TSQL'
+                        Tone = 'TSQL'
+                        print("PL in PL tone")
+                        DtcsCode = '0'
+                        rToneFreq = a_rToneFreq
+                        cToneFreq = a_rToneFreq
+                    Offset = '0.000000'
+                    if "FM" in row["Mode"]:
+                        Mode = "FM"
+                    DtcsPolarity = 'NN'
+                    TStep = '5.00'
+                    Duplex = ''
+                    Location += 1
+                    file_file_chirp_2 = f"{Location},{channel_name},{Frequency},{Duplex},{Offset},{Tone},{rToneFreq},{cToneFreq},{DtcsCode},{DtcsPolarity},{Mode},{TStep},{Skip},{Comment},{URCALL},{RPT1CALL},{RPT2CALL},{DVCODE}\n"
+                    write_to_file(file_to_write, file_file_chirp_2)
+
+
+csv_to_chirp_import('ctid_2502.csv', 'import_csv_dowload2.csv')
+
+csv_to_chirp_import('ctid_2487.csv', 'import_csv_dowload3.csv')
