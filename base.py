@@ -253,7 +253,7 @@ def add_frs_channels():
             f.close()
 
 
-# add_frs_channels()
+add_frs_channels()
 
 
 def csv_to_chirp_import(file_to_read, file_to_write):
@@ -328,5 +328,5 @@ def csv_to_chirp_import(file_to_read, file_to_write):
 
 
 csv_to_chirp_import('ctid_2502.csv', 'import_csv_dowload2.csv')
-
 csv_to_chirp_import('ctid_2487.csv', 'import_csv_dowload3.csv')
+csv_to_chirp_import('ctid_2446.csv', 'import_csv_dowload4.csv')
