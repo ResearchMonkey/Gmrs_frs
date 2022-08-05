@@ -222,40 +222,6 @@ def write_to_file(file_name, file_values):
     f.write(file_values)
     f.close()
 
-
-def add_frs_channels():
-    print("{Location},{channel_name},{Frequency},{Duplex},{Offset},{Tone},{rToneFreq},{cToneFreq},{DtcsCode},{DtcsPolarity},{Mode},{TStep},{Skip},{Comment},{URCALL},{RPT1CALL},{RPT2CALL},{DVCODE}\n")
-    f = open("chirp_GMRS_FRS.csv", "w")
-    f.write(f'Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE\n')
-    f.close()
-    Location = 40
-    Tone = 'TSQL'
-    Offset = '0.000000'
-    Mode = 'FM'
-    DtcsCode = '023'
-    DtcsPolarity = 'NN'
-    TStep = '5.00'
-    for freq, freq_value in gmrs_frs.items():
-        # print(f'Freq {freq} is channel number {freq_value}')
-        for ctss_freq, ctss_freq_vl in ctcss_gmrs_frs_sub.items():
-            rToneFreq = ctss_freq
-            cToneFreq = ctss_freq
-            channel_name = f"CH {freq_value} {ctss_freq_vl}"
-            if ctss_freq == '67.0':
-                Skip = ''
-            else:
-                Skip = 'S'
-            Location += 1
-            file_format_chirp = f"{Location},{channel_name},{freq},{Duplex},{Offset},{Tone},{rToneFreq},{cToneFreq},{DtcsCode},{DtcsPolarity},{Mode},{TStep},{Skip},{Comment},{URCALL},{RPT1CALL},{RPT2CALL},{DVCODE}\n"
-            print(file_format_chirp)
-            f = open("chirp_GMRS_FRS.csv", "a")
-            f.write(file_format_chirp)
-            f.close()
-
-
-add_frs_channels()
-
-
 def csv_to_chirp_import(file_to_read, file_to_write):
     with open(file_to_read, mode='r') as csv_file:
         csv_reader = csv.DictReader(csv_file)
@@ -326,6 +292,39 @@ def csv_to_chirp_import(file_to_read, file_to_write):
                     file_file_chirp_2 = f"{Location},{channel_name},{Frequency},{Duplex},{Offset},{Tone},{rToneFreq},{cToneFreq},{DtcsCode},{DtcsPolarity},{Mode},{TStep},{Skip},{Comment},{URCALL},{RPT1CALL},{RPT2CALL},{DVCODE}\n"
                     write_to_file(file_to_write, file_file_chirp_2)
 
+
+def add_frs_channels():
+    # TODO add logic to read the file created above and start the location numbering form where it leaves off
+    print("{Location},{channel_name},{Frequency},{Duplex},{Offset},{Tone},{rToneFreq},{cToneFreq},{DtcsCode},{DtcsPolarity},{Mode},{TStep},{Skip},{Comment},{URCALL},{RPT1CALL},{RPT2CALL},{DVCODE}\n")
+    f = open("chirp_GMRS_FRS.csv", "w")
+    f.write(f'Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE\n')
+    f.close()
+    Location = 65
+    Tone = 'TSQL'
+    Offset = '0.000000'
+    Mode = 'FM'
+    DtcsCode = '023'
+    DtcsPolarity = 'NN'
+    TStep = '5.00'
+    for freq, freq_value in gmrs_frs.items():
+        # print(f'Freq {freq} is channel number {freq_value}')
+        for ctss_freq, ctss_freq_vl in ctcss_gmrs_frs_sub.items():
+            rToneFreq = ctss_freq
+            cToneFreq = ctss_freq
+            channel_name = f"CH {freq_value} {ctss_freq_vl}"
+            if ctss_freq == '67.0':
+                Skip = ''
+            else:
+                Skip = 'S'
+            Location += 1
+            file_format_chirp = f"{Location},{channel_name},{freq},{Duplex},{Offset},{Tone},{rToneFreq},{cToneFreq},{DtcsCode},{DtcsPolarity},{Mode},{TStep},{Skip},{Comment},{URCALL},{RPT1CALL},{RPT2CALL},{DVCODE}\n"
+            print(file_format_chirp)
+            f = open("chirp_GMRS_FRS.csv", "a")
+            f.write(file_format_chirp)
+            f.close()
+
+
+add_frs_channels()
 
 csv_to_chirp_import('ctid_2502.csv', 'ruth.csv')
 # csv_to_chirp_import('ctid_2487.csv', 'import_csv_dowload3.csv')
