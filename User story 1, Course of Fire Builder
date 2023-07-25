@@ -1,0 +1,27 @@
+As a paid user
+I want to build a course of fire
+So I can repeatedly execute the created drill
+
+COA
+Course of fire builder (COF)
+
+Be able to cancel and be taken back to the COF home page/screen
+
+Add name (free text alpha numeric up to 72 characters)
+add description (free text alpha numeric up to 256 characters)
+Add a starting condition for the drill ( see mock up)
+Select (only hits) scoring
+
+Be able to select from 5 target types (circle, square, IDPA, TN Qual)
+Select target size
+Select a distance from the shooter
+Select a distance from target 1 select a relationship to Target 1
+allow a max of three targets per drill for MVP
+
+add called shots to targets
+add a Reload pr-selected action in between shots (slide-lock, tactical)
+Add free text instruction into the course of fire
+drag and drop the order of all actions
+Save the course of fire to the drill Library
+add images to the course of fire
+Select an image as a COF main image (thumbnail)
